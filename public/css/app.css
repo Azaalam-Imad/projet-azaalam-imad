@@ -1,11 +1,24 @@
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
+@font-face {
+  font-family: amatic;
+  src: url(/public/images/font/Amatic_SC/AmaticSC-Bold.ttf);
+}
+@font-face {
+  font-family: roboto;
+  src: url(/public/images/font/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+body{
+    background-color: #f2f2f2;
+}
 header{
     position: relative;
 }
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -14,12 +27,14 @@ nav{
     width: 100vw;
     position: fixed;
     background-color: white;
+    padding-right: 50px;
 }
 .logo{
     font-family: Arial, Helvetica, sans-serif; 
     color: #37373f; 
     font-size: 20px;
     cursor: pointer;
+    padding-left: 20px;
 }
 .logo span{
     color: red;   
@@ -53,12 +68,81 @@ nav{
   width: 30rem;
   transition: 1s;
 }
-nav button{
+.btns{
         font-size: 14px;
-        padding: 8px 26px;
+        padding: 12px 35px;
         border-radius: 50px;
         color: white;
         background-color: #ce1212;
         border: none;
         cursor: pointer;
+}
+.enjoy-img{
+    padding-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+.enjoy-img img{
+    position: relative;
+    right: 6rem;
+    animation: plat 2.5s infinite;
+   
+    bottom: -0px;
+}
+@keyframes plat {
+  0%   {bottom: 0px;}
+  50%  {bottom: -10px;}
+  100% {bottom: -0px;}
+}
+
+.enjoy{
+    width: 40vw;
+    padding: 30px;
+    padding-left: 10vw;
+    
+    
+}
+.enjoy h1{
+    font-family: amatic;
+    font-size: 64px;
+    color: #37373f;
+}
+.enjoy p{
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 400;
+    color: #2125299a;
+}
+.btn-video{
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+}.watch-v{
+    border: none;
+    background-color: transparent;
+}
+.btnv , .watch-v{
+    font-size: 15px;
+    font-weight: bold;
+}
+.watch-v{
+    color: rgba(0, 0, 0, 0.808);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+.watch-v svg{
+    color: #ce1212;
+    
+}
+.watch-v:hover {
+  svg  {
+     color: #ce1212ce;
+    }
+    color: #ce1212ce;
+    
 }
