@@ -1,0 +1,64 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+}
+.logo{
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #37373f; 
+    font-size: 20px;
+    cursor: pointer;
+}
+.logo span{
+    color: red;   
+}
+.links{
+    display: flex;
+    gap: 25px;
+}
+.links a {
+    text-decoration: none;
+    color: #7f7f90;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 16px;
+    position: relative;
+    height: 100%;
+    padding: 10px 0px 10px 10px;
+    overflow: hidden;
+    
+}
+.links a::before{
+  width: 0rem;
+  height:2px;
+ background-color: #ce1212;
+ content: "";
+ position: absolute;
+ bottom: 0px;
+ transition: 0.4s;
+ 
+}
+.links a:hover:before{
+  width: 30rem;
+  transition: 1s;
+}
+nav button{
+        font-size: 14px;
+        padding: 8px 26px;
+        border-radius: 50px;
+        color: white;
+        background-color: #ce1212;
+        border: none;
+        cursor: pointer;
+}
