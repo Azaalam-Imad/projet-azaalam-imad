@@ -17,6 +17,7 @@ body{
 }
 header{
     position: relative;
+    padding-bottom: 50px;
 }
 
 nav{
@@ -28,6 +29,7 @@ nav{
     position: fixed;
     background-color: white;
     padding-right: 50px;
+    z-index: 999;
 }
 .logo{
     font-family: Arial, Helvetica, sans-serif; 
@@ -77,11 +79,13 @@ nav{
         border: none;
         cursor: pointer;
 }
+
 .enjoy-img{
     padding-top: 10rem;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    align-items: center;
+    
     
 }
 .enjoy-img img{
@@ -145,4 +149,193 @@ nav{
     }
     color: #ce1212ce;
     
+}
+.btns:hover{
+     background-color: #ce1212b4;
+}
+
+
+
+
+/* about ************************************/
+.about{
+   background-color: white;
+   padding: 70px;
+}
+.tsec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.tsec p{
+    color: #212529ce;
+    font-family: roboto;
+}
+.tsec h2{
+    font-family: amatic;
+    font-size: 48px;
+    color: rgba(0, 0, 0, 0.877);
+}
+.tsec span{
+    color:#ce1212d3 ;
+}
+.but-img{
+    border: 4px solid #212529a8;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 30px;
+    margin-top: 10px;
+}
+.but-img h3{
+    color: #37373f;
+    font-size: 24px;
+    font-family: roboto;
+}
+.but-img p{
+    color:#ce1212e7 ;
+     font-size: 26px;
+        font-family: roboto;
+        font-weight: bold;
+
+}
+.right-about{
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+}
+.right-about p{
+    font-size: 17px;
+    font-family: roboto;
+    width: 31vw;
+    
+}
+.contnetn-about{
+    display: flex;
+    gap: 70px;
+    padding-top: 49px;
+}
+.AA {
+position: relative;
+left: 25px;
+}
+
+.AA svg{
+    position: absolute;
+    left: -30px;
+    color: #ce1212;
+}
+
+.img-vd{
+    position: relative;
+}
+.img-vd svg{
+    background-color: #ce1212;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    border: #f2f2f2;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+
+
+.section2{
+    display: grid;
+    grid-template-columns: 27vw 18vw 18vw 18vw;
+    gap: 20px;
+    padding-left: 90px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.section2 div{
+    width: 100%;
+    padding: 20px;
+    
+}
+.premieDiv{
+    background-color: #ce1212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+.premieDiv h2{
+    font-family: roboto;
+    font-size: 34px;
+    padding-bottom: 20px;
+}
+.premieDiv p {
+    font-family:  roboto;
+    font-size: 17px;
+}
+.premieDiv button{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.185);
+    color: white;
+    cursor: pointer;
+    padding: 8px 40px 10px;
+    border-radius: 50px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    font-family: roboto;
+
+}
+.premieDiv button svg{
+    transition: 1s;
+}
+.premieDiv button:hover{
+    svg{color: #ce1212;}
+    color:#ce1212 ;
+    background-color: white;
+}
+.SS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: roboto;
+    gap: 25px;
+    background-color: white;
+    padding-top: 70px !important;
+}
+.SS h4{
+    color: #37373f;
+    font-size: 18px;
+}
+.SS p {
+    color: #212529ad;
+}
+.containerico{
+    background-color: #ce121215;
+    width: 60px !important;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.5s;
+}
+.containerico svg{
+    position: absolute;
+    width: 40px !important;
+    height: 40px !important;
+    color: #d61c1c;
+}
+.SS:hover{
+    .containerico svg{ color: #ffffff;}
+    .containerico{background-color: #ce1212;}
 }
