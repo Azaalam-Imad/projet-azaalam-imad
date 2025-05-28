@@ -1277,5 +1277,35 @@ textarea.text {
     width: 95%;
     padding-top: 20px;
 }
-
+.pp1{
+    flex-direction: column;
+}
+.conn{
+    width: 100%;
+}
+.froo{
+    width: 92%;
+}
+.centr{
+    flex-direction: column;
+}
+.preFOO{
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.containee{
+    width: 100%;
+    
+}
+.btfoot{
+    width: 100%;
+}
+footer {
+    height: unset;
+    padding-bottom: 40px;
+    padding-inline: 10px;
+}
+footer p {
+    font-size: 15px;
+}
 }
