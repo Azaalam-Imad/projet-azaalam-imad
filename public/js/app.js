@@ -43,6 +43,16 @@ links.forEach(e => {
     
 })
 
+let zef=document.querySelector(".zef")
+let linkss=document.querySelector(".links")
+let mennu=document.querySelector(".mennu")
+mennu.addEventListener('click', ()=>{
+    linkss.style="display: flex; "
+})
+zef.addEventListener('click', ()=>{
+    linkss.style="display: none; "
+})
+
 
 
 

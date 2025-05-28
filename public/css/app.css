@@ -856,7 +856,7 @@ padding-bottom: 40px;
 
 .containee{
     
-    width: 17vw;
+    width: 19vw;
     display: flex;
     
     gap: 15px;
@@ -976,4 +976,128 @@ padding-bottom: 40px;
     right: 15rem;
     z-index: 99999999999999999999;
     cursor: pointer;
+}
+
+.ta{
+    text-decoration: none;
+}
+
+@media (max-width: 425px){
+
+.links{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    flex-direction: column;
+    width: 80%;
+    left: 10vw;
+    top: 10vh;
+    padding: 20px;
+    display: none;
+    border-radius: 19px;
+    
+}
+
+.links:hover{
+    color: #c40000;
+}
+.bglinks{
+    width: 130vw;
+    height: 130vh;
+    background-color: rgba(0, 0, 0, 0.397);
+    position: absolute;
+    top: -30vh;
+    left: -20vw;
+    z-index: -1000;
+}
+.zef{
+    position: absolute;
+    right: 0px;
+    top: -28px;
+}
+.mennu{
+    color: #37373f;
+}
+nav{
+    justify-content: space-between;
+    padding-inline: 15px;
+}
+.vc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px; 
+}
+.login{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.links a:hover:before{
+  width: 0rem;
+}
+.links a:hover{
+    color: #ce1212;
+}
+.enjoy-img{
+    flex-direction: column-reverse;
+    padding-top: 20vh;
+}
+.enjoy-img img{
+    right: 0px;
+    width: 90vw;
+}
+.enjoy{
+    width: unset;
+    padding: unset;
+    padding: 10px 10px 10px 10px;
+}
+.enjoy h1{
+    font-size: 30px;
+    padding-top: 50px;
+    width: 55vw;
+}
+.enjoy P{
+    font-size: 18px;
+}
+.modal{
+    height: 100vh;
+    width: 100vw;
+}
+.zze{
+    right: 15vw;
+}
+.btcarpar{
+    height: 100vh;
+    width: 100vw;
+}
+.LL{
+    display: none;
+}
+.ap{
+    width: 100vw;
+   
+}
+
+.ap1{
+    width: 100vw;
+    gap: 30px;
+}
+.ap1 .slide{
+    width: 100vw;
+    padding-inline: 10px;
+}
+
+.ap1 .slide iframe{
+    width: 100vw;
+}
+html {
+  scroll-behavior: smooth;
+ }
+ 
+ a {
+  text-decoration: none;
+  color: black;
+ } 
+ 
+ 
+
 }
