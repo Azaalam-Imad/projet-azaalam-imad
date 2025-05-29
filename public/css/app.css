@@ -14,6 +14,7 @@
 }
 body{
     background-color: #f2f2f2;
+    /* width: 100vw; */
 }
 header{
     position: relative;
@@ -628,6 +629,9 @@ font-family: roboto;
 .centent-chef div:hover{
    
     scale: 1.1;
+    .socials{
+        right: 10px !important;
+    }
 }
 
 .centent-chef img{
@@ -981,9 +985,90 @@ padding-bottom: 40px;
 .ta{
     text-decoration: none;
 }
+.carr1{
+height: 40vh;  
+/* padding-bottom: 40px;   */
+/* width: fit-content; */
+}
+.crr12{
+    /* gap: 15px; */
+    padding: 10px;
+    
+    
+    
+}
+.crr12 .slide{
+       min-width: 20%;
+}
+.crr12 img {
+    width: 100%;
+    
+}
+.galr{
+    padding-bottom: 30px;
+}
+
+.drop{
+    width: 20rem;
+    height: 10rem;
+    background-color: rgba(255, 255, 255, 0.932);
+    position: absolute;
+    top: 10vh;
+    z-index: 99999999999999999;
+    right: 30%;
+    display: none;
+    height: fit-content;
+    padding: 20px;
+}
+.vcs{
+    flex-direction: column;
+}
+.centent-chef div {
+    overflow: hidden !important;
+    position: relative;
+}
+.socials{
+    position: absolute !important;
+    top: 20px !important;
+    right: -20vw !important;
+    background-color: rgba(179, 178, 178, 0.712) !important;
+    border-radius: 5px !important;
+    width: 50px !important;
+    height: 200px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.socials i{
+    font-size: 25px;
+    color: #37373f;
+}
+.scrol{
+    width: 50px;
+    height: 50px;
+    background-color: #c40000;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scrol svg{
+    color: white;
+}
 
 @media (max-width: 425px){
-
+.drop{
+   width: 0px;
+   height: 0px;
+   color: transparent;
+   background-color: transparent;
+}
 .links{
     background-color: rgb(255, 255, 255);
     position: absolute;
@@ -1154,13 +1239,21 @@ html {
 .parentcontcaro {
     flex-direction: column;
 }
+
 .carousel-container{
     overflow-y: unset;
-    height: unset;
+    
 
 }
-.carousel {
+.xc{
     height: unset;
+    width: 90%;
+}
+.xc .carousel{
+height: fit-content;
+}
+.carousel {
+    
     padding-bottom: 5vh;
 }
 
@@ -1177,9 +1270,7 @@ html {
 .contentcaro{
     width: 100%;
 }
-.carousel-container{
-    width: 90%;
-}
+
 .pointsCrusel{
     transform: translateX(50%);
 }
@@ -1194,7 +1285,7 @@ html {
     display: unset;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 40px;
     
 }
 .centent-chef div{
@@ -1221,7 +1312,7 @@ html {
 }
 
 .book .tsec h2 span {
-  color: #ff6347; /* example highlight color */
+  color: #ff6347; 
 }
 
 .book .container {
@@ -1307,5 +1398,31 @@ footer {
 }
 footer p {
     font-size: 15px;
+}
+.carr1{
+        height: 100vw;
+        padding-bottom: 40px;
+        width: fit-content;/
+}
+.crr12{
+    gap: unset;
+    padding: unset;
+    
+    
+    
+}
+.left{
+    width: unset;
+}
+.crr12 .slide{
+       min-width: 100%;
+       height: 100%;
+}
+.crr12 img {
+    width: 100%;
+    
+}
+.galr{
+    padding-bottom: 30px;
 }
 }
