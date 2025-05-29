@@ -98,24 +98,20 @@ carouselContainers.forEach(container => {
 
   let updatedSlides = Array.from(camera.children);
   let index = 1;
-  container.dataset.index = index;
-
+  container.myIndex = index;
 
   let width = updatedSlides[0].clientWidth;
   camera.style.transform = `translateX(-${width * index}px)`;
 
-
   container.querySelector('.next')?.addEventListener('click', () => moveSlide(container, 1));
   container.querySelector('.prev')?.addEventListener('click', () => moveSlide(container, -1));
 
-  
   dots.forEach((dot, i) => {
     dot.addEventListener('click', () => {
       goToSlide(container, i + 1);
     });
   });
 
- 
   if (container.getAttribute('auto') === 'activ') {
     setInterval(() => moveSlide(container, 1), 4000);
   }
@@ -124,31 +120,28 @@ carouselContainers.forEach(container => {
 function moveSlide(container, step) {
   let camera = container.querySelector('.carousel');
   let slides = Array.from(camera.children);
-  let index = parseInt(container.dataset.index) + step;
+  let index = container.myIndex + step;
   let width = slides[0].clientWidth;
 
   camera.style.transition = 'transform 0.5s ease-in-out';
   camera.style.transform = `translateX(-${width * index}px)`;
-  container.dataset.index = index;
-// **************************************************
+  container.myIndex = index;
+
   function resetCameraPosition(newIndex) {
-  camera.style.transition = 'none';
-  index = newIndex;
-  camera.style.transform = `translateX(-${width * index}px)`;
-  container.dataset.index = index;
-}
-
-// khasni nrja3 lhadi 
-
-camera.addEventListener('transitionend', () => {
-  if (index === slides.length - 1) {
-    resetCameraPosition(1);
-  } else if (index === 0) {
-    resetCameraPosition(slides.length - 1);
+    camera.style.transition = 'none';
+    index = newIndex;
+    camera.style.transform = `translateX(-${width * index}px)`;
+    container.myIndex = index;
   }
-  updateDots(container);
-});
 
+  camera.addEventListener('transitionend', () => {
+    if (index === slides.length - 1) {
+      resetCameraPosition(1);
+    } else if (index === 0) {
+      resetCameraPosition(slides.length - 1);
+    }
+    updateDots(container);
+  });
 }
 
 function goToSlide(container, index) {
@@ -158,7 +151,7 @@ function goToSlide(container, index) {
 
   camera.style.transition = 'transform 0.5s ease-in-out';
   camera.style.transform = `translateX(-${width * index}px)`;
-  container.dataset.index = index;
+  container.myIndex = index;
 
   camera.addEventListener('transitionend', () => {
     updateDots(container);
@@ -167,7 +160,7 @@ function goToSlide(container, index) {
 
 function updateDots(container) {
   let dots = container.querySelectorAll('.ptn');
-  let index = parseInt(container.dataset.index);
+  let index = container.myIndex;
   let pageIndex = index - 1;
 
   if (pageIndex < 0) pageIndex = dots.length - 1;

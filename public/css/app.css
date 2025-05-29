@@ -4,13 +4,21 @@
     margin: 0px;
     box-sizing: border-box;
 }
-@font-face {
+/* @font-face {
   font-family: amatic;
   src: url(/public/images/font/Amatic_SC/AmaticSC-Bold.ttf);
 }
 @font-face {
   font-family: roboto;
   src: url(/public/images/font/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+} */
+ @font-face {
+  font-family: amatic;
+  src: url(../images/font/Amatic_SC/AmaticSC-Bold.ttf);
+}
+@font-face {
+  font-family: roboto;
+  src: url(../images/font/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
 }
 body{
     background-color: #f2f2f2;
