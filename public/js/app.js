@@ -60,11 +60,6 @@ links.forEach(e => {
           }
         })
         
-
-
-
-
-
         links.forEach(e => {e.style="border-bottom-color:rgb(182, 179, 179);"})
         if (zz.textContent==e.textContent) {
         e.style="border-bottom-color: #c40000;"
